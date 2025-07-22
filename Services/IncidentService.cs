@@ -1,8 +1,8 @@
 ﻿using TicketApp;
 using Microsoft.Xrm.Sdk;
-using Ticket_Web_App.Services.Interfaces;
+using Ticket_Web_App.IServices;
 
-namespace WebTest1.Services.Implementation
+namespace Ticket_Web_App.Services
 {
     public class IncidentService : IIncidentService
     {

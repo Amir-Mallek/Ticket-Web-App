@@ -1,9 +1,8 @@
 using Microsoft.PowerPlatform.Dataverse.Client;
 using Microsoft.Xrm.Sdk;
-using Ticket_Web_App.Services.Implementation;
-using Ticket_Web_App.Services.Interfaces;
+using Ticket_Web_App.IServices;
+using Ticket_Web_App.Services;
 using TicketApp;
-using WebTest1.Services.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,7 +2,7 @@
 using Ticket_Web_App.Dtos.Request;
 using Ticket_Web_App.Dtos.Response;
 using Ticket_Web_App.Mappers;
-using Ticket_Web_App.Services.Interfaces;
+using Ticket_Web_App.IServices;
 using TicketApp;
 
 namespace Ticket_Web_App.Controllers

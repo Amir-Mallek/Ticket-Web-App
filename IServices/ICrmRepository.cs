@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 
-namespace Ticket_Web_App.Services.Interfaces
+namespace Ticket_Web_App.IServices
 {
     public interface ICrmRepository<T> where T : Entity
     {

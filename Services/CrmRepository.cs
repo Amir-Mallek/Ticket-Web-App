@@ -3,9 +3,9 @@ using Microsoft.Xrm.Sdk.Client;
 using Microsoft.Xrm.Sdk.Query;
 using System.Reflection;
 using Ticket_Web_App.Attributes;
-using Ticket_Web_App.Services.Interfaces;
+using Ticket_Web_App.IServices;
 
-namespace Ticket_Web_App.Services.Implementation
+namespace Ticket_Web_App.Services
 {
     public class CrmRepository<T> : ICrmRepository<T> where T : Entity
     {

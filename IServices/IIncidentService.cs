@@ -1,6 +1,6 @@
 ﻿using TicketApp;
 
-namespace Ticket_Web_App.Services.Interfaces
+namespace Ticket_Web_App.IServices
 {
     public interface IIncidentService
     {
