@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Xrm.Sdk.Query;
+using Ticket_Web_App.Dtos.Request;
 using Ticket_Web_App.Dtos.Response;
 using Ticket_Web_App.Mappers;
 using Ticket_Web_App.Services.Interfaces;
@@ -23,15 +24,38 @@ namespace Ticket_Web_App.Controllers
         }
 
         [HttpGet()]
-        public List<IncidentResponseDto> GetIncidents()
+        public List<IncidentResponseDto> GetIncidents([FromQuery] IncidentsFilterDto filter)
         {
-            var query = new QueryExpression("incident");
-            return _incidentRepo.RetrieveMultiple(query).Select(e => IncidentResponseMapper.Map(e)).ToList();
+            var query = IncidentsQueryMapper.Map(filter);
+            return _incidentRepo
+                .RetrieveMultiple(query)
+                .Select(e => IncidentResponseMapper.Map(e))
+                .ToList();
         }
 
         [HttpGet("{id}")]
         public IncidentResponseDto GetIncident(Guid id) {
             return IncidentResponseMapper.Map(_incidentRepo.Retrieve(id));
+        }
+
+        [HttpPost()]
+        public Guid CreateIncident([FromBody] CreateIncidentDto createIncidentDto)
+        {
+            var incident = CreateIncidentMapper.Map(createIncidentDto);
+            return _incidentRepo.Create(incident);
+        }
+
+        [HttpPut("{id}")]
+        public void UpdateIncident(Guid id, [FromBody] UpdateIncidentDto updateIncidentDto)
+        {
+            var incident = UpdateIncidentMapper.Map(updateIncidentDto, id);
+            _incidentRepo.Update(incident);
+        }
+
+        [HttpDelete("{id}")]
+        public void DeleteIncident(Guid id)
+        {
+            _incidentRepo.Delete(id);
         }
     }
 }
