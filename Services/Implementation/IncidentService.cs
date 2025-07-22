@@ -1,6 +1,5 @@
 ﻿using TicketApp;
 using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Query;
 using Ticket_Web_App.Services.Interfaces;
 
 namespace WebTest1.Services.Implementation

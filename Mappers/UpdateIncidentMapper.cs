@@ -1,6 +1,5 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Ticket_Web_App.Dtos.Request;
-using Ticket_Web_App.Enums;
 using TicketApp;
 
 namespace Ticket_Web_App.Mappers

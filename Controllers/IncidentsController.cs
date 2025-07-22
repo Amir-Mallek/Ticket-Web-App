@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Xrm.Sdk.Query;
 using Ticket_Web_App.Dtos.Request;
 using Ticket_Web_App.Dtos.Response;
 using Ticket_Web_App.Mappers;
@@ -13,14 +12,10 @@ namespace Ticket_Web_App.Controllers
     public class IncidentsController : ControllerBase
     {
         private readonly ICrmRepository<Incident> _incidentRepo;
-        private readonly IIncidentService _incidentService;
 
-        public IncidentsController(
-            ICrmRepository<Incident> incidentRepo, 
-            IIncidentService incidentService)
+        public IncidentsController(ICrmRepository<Incident> incidentRepo)
         {
             _incidentRepo = incidentRepo;
-            _incidentService = incidentService;
         }
 
         [HttpGet()]
