@@ -1,0 +1,33 @@
+appsettings.Development.json
+appsettings.json
+
+# Build folders
+bin/
+obj/
+
+# User-specific and IDE files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Mac & Linux junk files
+.DS_Store
+
+# HTTP test files
+*.http
+
+# Rider (if you're using JetBrains IDEs)
+.idea/
+*.sln.iml
+
+# Docker
+*.dockerignore
+docker-compose*
+
+# Logs and temp
+*.log
+*.tmp
