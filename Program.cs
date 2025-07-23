@@ -38,7 +38,6 @@ builder.Services.AddSingleton<IOrganizationService>(provider =>
 
     return (IOrganizationService)serviceClient;
 });
-builder.Services.AddScoped<IIncidentService, IncidentService>();
 builder.Services.AddScoped<ICrmRepository<Incident>, CrmRepository<Incident>>();
 builder.Services.AddScoped<ICrmRepository<Account>, CrmRepository<Account>>();
 builder.Services.AddScoped<ICrmRepository<Contact>, CrmRepository<Contact>>();
