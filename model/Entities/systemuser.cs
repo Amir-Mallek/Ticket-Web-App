@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Ticket_Web_App.Attributes;
+
 namespace TicketApp
 {
 	
@@ -361,6 +363,7 @@ namespace TicketApp
 	/// </summary>
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[Microsoft.Xrm.Sdk.Client.EntityLogicalNameAttribute("systemuser")]
+	[AppColumns("systemuserid", "fullname", "internalemailaddress", "address1_telephone1")]
 	public partial class SystemUser : Microsoft.Xrm.Sdk.Entity
 	{
 		
