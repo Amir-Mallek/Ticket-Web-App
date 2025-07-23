@@ -1,4 +1,5 @@
 ﻿using Ticket_Web_App.Dtos.Response;
+using Ticket_Web_App.Enums;
 using TicketApp;
 
 namespace Ticket_Web_App.Mappers
@@ -13,6 +14,12 @@ namespace Ticket_Web_App.Mappers
                 Title = incident.Title,
                 TicketNumber = incident.TicketNumber,
                 ClientId = incident.CustomerId.Id,
+                ClientType = incident.CustomerId.LogicalName switch
+                {
+                    "account" => ClientType.Account,
+                    "contact" => ClientType.Contact,
+                    _ => ClientType.Contact
+                },
                 AgentId = incident.OwnerId.Id,
                 Priority = incident.PriorityCode,
                 Origin = incident.CaseOriginCode,

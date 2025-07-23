@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Ticket_Web_App.Attributes;
+
 namespace TicketApp
 {
 	
@@ -487,6 +489,20 @@ namespace TicketApp
 	/// </summary>
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[Microsoft.Xrm.Sdk.Client.EntityLogicalNameAttribute("account")]
+	[AppColumns
+		(
+			"accountid",
+			"name",
+			"telephone1",
+			"emailaddress1",
+			"address1_country",
+			"address1_city",
+			"address1_line1",
+			"address1_postalcode",
+            "address1_composite",
+			"primarycontactid"
+		)
+	]
 	public partial class Account : Microsoft.Xrm.Sdk.Entity
 	{
 		

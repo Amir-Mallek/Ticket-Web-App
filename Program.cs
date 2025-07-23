@@ -40,6 +40,8 @@ builder.Services.AddSingleton<IOrganizationService>(provider =>
 });
 builder.Services.AddScoped<IIncidentService, IncidentService>();
 builder.Services.AddScoped<ICrmRepository<Incident>, CrmRepository<Incident>>();
+builder.Services.AddScoped<ICrmRepository<Account>, CrmRepository<Account>>();
+builder.Services.AddScoped<ICrmRepository<Contact>, CrmRepository<Contact>>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

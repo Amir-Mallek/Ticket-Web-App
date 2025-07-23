@@ -234,19 +234,20 @@ namespace TicketApp
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[Microsoft.Xrm.Sdk.Client.EntityLogicalNameAttribute("incident")]
 	[AppColumns
-	(
-		"incidentid",
-		"title",
-		"ticketnumber",
-		"customerid", 
-		"ownerid",
-		"prioritycode",
-		"caseorigincode",
-		"statuscode",
-		"description",
-		"createdby",
-		"createdon"
-	)]
+		(
+			"incidentid",
+			"title",
+			"ticketnumber",
+			"customerid", 
+			"ownerid",
+			"prioritycode",
+			"caseorigincode",
+			"statuscode",
+			"description",
+			"createdby",
+			"createdon"
+		)
+	]
 	public partial class Incident : Microsoft.Xrm.Sdk.Entity
 	{
 		

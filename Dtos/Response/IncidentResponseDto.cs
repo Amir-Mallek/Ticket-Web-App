@@ -1,4 +1,5 @@
-﻿using TicketApp;
+﻿using Ticket_Web_App.Enums;
+using TicketApp;
 
 namespace Ticket_Web_App.Dtos.Response
 {
@@ -8,6 +9,7 @@ namespace Ticket_Web_App.Dtos.Response
         public required string Title { get; set; }
         public required string TicketNumber { get; set; }
         public Guid ClientId { get; set; }
+        public ClientType ClientType { get; set; }
         public Guid AgentId { get; set; }
         public incident_prioritycode? Priority { get; set; }
         public incident_caseorigincode? Origin { get; set; }
