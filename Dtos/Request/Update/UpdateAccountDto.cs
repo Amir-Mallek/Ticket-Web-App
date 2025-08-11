@@ -1,4 +1,4 @@
-﻿namespace Ticket_Web_App.Dtos.Request
+﻿namespace Ticket_Web_App.Dtos.Request.Update
 {
     public class UpdateAccountDto
     {

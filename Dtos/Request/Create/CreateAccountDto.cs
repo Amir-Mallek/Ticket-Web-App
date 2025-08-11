@@ -1,4 +1,4 @@
-﻿namespace Ticket_Web_App.Dtos.Request
+﻿namespace Ticket_Web_App.Dtos.Request.Create
 {
     public class CreateAccountDto
     {

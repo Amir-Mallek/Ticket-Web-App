@@ -1,9 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Ticket_Web_App.Dtos.Request;
 using Ticket_Web_App.Dtos.Response;
-using Ticket_Web_App.Mappers;
 using Ticket_Web_App.IServices;
 using TicketApp;
+using Ticket_Web_App.Mappers.Response;
+using Ticket_Web_App.Mappers.Request.Filter;
+using Ticket_Web_App.Mappers.Request.Create;
+using Ticket_Web_App.Mappers.Request.Update;
+using Ticket_Web_App.Dtos.Request.Filter;
+using Ticket_Web_App.Dtos.Request.Create;
+using Ticket_Web_App.Dtos.Request.Update;
 
 namespace Ticket_Web_App.Controllers
 {

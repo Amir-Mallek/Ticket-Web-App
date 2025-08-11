@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk.Query;
-using Ticket_Web_App.Dtos.Request;
+using Ticket_Web_App.Dtos.Request.Filter;
 
-namespace Ticket_Web_App.Mappers
+namespace Ticket_Web_App.Mappers.Request.Filter
 {
     public static class IncidentsQueryMapper
     {

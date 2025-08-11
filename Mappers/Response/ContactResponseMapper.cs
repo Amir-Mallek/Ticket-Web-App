@@ -2,7 +2,7 @@
 using Ticket_Web_App.Enums;
 using TicketApp;
 
-namespace Ticket_Web_App.Mappers
+namespace Ticket_Web_App.Mappers.Response
 {
     public static class ContactResponseMapper
     {

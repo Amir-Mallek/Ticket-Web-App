@@ -1,7 +1,7 @@
 ﻿using Ticket_Web_App.Dtos.Response;
 using TicketApp;
 
-namespace Ticket_Web_App.Mappers
+namespace Ticket_Web_App.Mappers.Response
 {
     public static class SystemUserResponseMapper
     {

@@ -1,19 +1,24 @@
 ﻿using Microsoft.Xrm.Sdk.Query;
-using Ticket_Web_App.Dtos.Request;
+using Ticket_Web_App.Dtos.Request.Filter;
 
-namespace Ticket_Web_App.Mappers
+namespace Ticket_Web_App.Mappers.Request.Filter
 {
-    public static class SystemUserFilterMapper
+    public static class ContactFilterMapper
     {
-        public static QueryExpression Map(SystemUserFilterDto filter)
+        public static QueryExpression Map(ContactFilterDto filter)
         {
-            var query = new QueryExpression("systemuser");
+            var query = new QueryExpression("contact");
 
             var filterExpression = new FilterExpression(LogicalOperator.And);
 
             if (!string.IsNullOrWhiteSpace(filter.FullName))
             {
                 filterExpression.AddCondition("fullname", ConditionOperator.Like, $"%{filter.FullName}%");
+            }
+
+            if (filter.ParentClientId.HasValue)
+            {
+                filterExpression.AddCondition("parentcustomerid", ConditionOperator.Equal, filter.ParentClientId.Value);
             }
 
             if (filterExpression.Conditions.Count > 0)

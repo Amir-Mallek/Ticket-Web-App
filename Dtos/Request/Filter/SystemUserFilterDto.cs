@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Ticket_Web_App.Dtos.Request
+namespace Ticket_Web_App.Dtos.Request.Filter
 {
     public class SystemUserFilterDto
     {

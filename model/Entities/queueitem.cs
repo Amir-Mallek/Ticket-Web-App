@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Ticket_Web_App.Attributes;
+
 namespace TicketApp
 {
 	
@@ -296,6 +298,7 @@ namespace TicketApp
 	/// </summary>
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[Microsoft.Xrm.Sdk.Client.EntityLogicalNameAttribute("queueitem")]
+	[AppColumns("queueitemid", "objectid", "queueid")]
 	public partial class QueueItem : Microsoft.Xrm.Sdk.Entity
 	{
 		

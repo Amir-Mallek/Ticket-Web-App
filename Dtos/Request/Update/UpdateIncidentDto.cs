@@ -1,7 +1,7 @@
 ﻿using Ticket_Web_App.Enums;
 using TicketApp;
 
-namespace Ticket_Web_App.Dtos.Request
+namespace Ticket_Web_App.Dtos.Request.Update
 {
     public class UpdateIncidentDto
     {

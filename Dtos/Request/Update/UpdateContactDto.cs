@@ -1,11 +1,11 @@
 ﻿using Ticket_Web_App.Enums;
 
-namespace Ticket_Web_App.Dtos.Request
+namespace Ticket_Web_App.Dtos.Request.Update
 {
-    public class CreateContactDto
+    public class UpdateContactDto
     {
-        public required string FirstName { get; set; }
-        public required string LastName { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
         public string? Email { get; set; }
         public string? Phone { get; set; }
         public Guid? ParentClientId { get; set; }

@@ -42,6 +42,9 @@ builder.Services.AddScoped<ICrmRepository<Incident>, CrmRepository<Incident>>();
 builder.Services.AddScoped<ICrmRepository<Account>, CrmRepository<Account>>();
 builder.Services.AddScoped<ICrmRepository<Contact>, CrmRepository<Contact>>();
 builder.Services.AddScoped<ICrmRepository<SystemUser>, CrmRepository<SystemUser>>();
+builder.Services.AddScoped<ICrmRepository<Queue>, CrmRepository<Queue>>();
+builder.Services.AddScoped<ICrmRepository<QueueItem>, CrmRepository<QueueItem>>();
+builder.Services.AddScoped<IQueueService, QueueService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using TicketApp;
 
-namespace Ticket_Web_App.Dtos.Request
+namespace Ticket_Web_App.Dtos.Request.Filter
 {
     public class IncidentsFilterDto
     {

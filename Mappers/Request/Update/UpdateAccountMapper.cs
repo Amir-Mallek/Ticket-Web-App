@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xrm.Sdk;
-using Ticket_Web_App.Dtos.Request;
+using Ticket_Web_App.Dtos.Request.Update;
 using TicketApp;
 
-namespace Ticket_Web_App.Mappers
+namespace Ticket_Web_App.Mappers.Request.Update
 {
     public static class UpdateAccountMapper
     {
